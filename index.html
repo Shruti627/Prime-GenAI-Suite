@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime GenAI Suite</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Prime GenAI Suite</h1>
+        <div class="nav-links">
+            <button class="tab" data-tool="summarizer">Summarizer</button>
+            <button class="tab" data-tool="qgen">Q Generator</button>
+            <button class="tab" data-tool="interview">Interview Coach</button>
+            <button id="modeToggle">🌙</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <textarea id="userInput" placeholder="Enter your text/topic here..."></textarea>
+
+        <div class="actions">
+            <button id="generateBtn" class="generate">Generate</button>
+            <button id="copyBtn" class="copy">Copy</button>
+            <button id="pdfBtn" class="export">Export PDF</button>
+        </div>
+
+        <div id="outputBox"></div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+</body>
+
+</html>
